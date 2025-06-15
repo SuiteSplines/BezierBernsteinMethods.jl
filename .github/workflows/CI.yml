@@ -85,6 +85,6 @@ jobs:
         shell: julia --project=docs --color=yes {0}
         run: |
           using Documenter: DocMeta, doctest
-          using BezierBernteinMethods
-          DocMeta.setdocmeta!(BezierBernteinMethods, :DocTestSetup, :(using BezierBernteinMethods); recursive=true)
-          doctest(BezierBernteinMethods)
+          using BezierBernsteinMethods
+          DocMeta.setdocmeta!(BezierBernsteinMethods, :DocTestSetup, :(using BezierBernsteinMethods); recursive=true)
+          doctest(BezierBernsteinMethods)
